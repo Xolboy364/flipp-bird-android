@@ -14,10 +14,6 @@ jobs:
         run: npx cap init "Flipp Bird" "com.xolboy364.flippbird" --web-dir www
       - name: Add Android
         run: npx cap add android
-      - name: Copy Files
-        run: npx cap copy
-      - name: Sync
-        run: npx cap sync
       - name: Build with Gradle
         run: |
           cd android
@@ -26,5 +22,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: FlippBird-Final-APK
+          name: FlippBird-Standard-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
