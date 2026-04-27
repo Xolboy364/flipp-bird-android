@@ -11,9 +11,11 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Capacitor Init
-        run: npx cap init "Flipp Bird" "com.xolboy364.flippbird" --web-dir .
+        run: npx cap init "Flipp Bird" "com.xolboy364.flippbird" --web-dir www
       - name: Add Android
         run: npx cap add android
+      - name: Copy Files
+        run: npx cap copy
       - name: Sync
         run: npx cap sync
       - name: Build with Gradle

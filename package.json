@@ -1,7 +1,6 @@
 {
   "name": "flipp-bird",
   "version": "1.0.0",
-  "description": "Flipp Bird Game",
   "main": "index.html",
   "dependencies": {
     "@capacitor/android": "^5.0.0",
